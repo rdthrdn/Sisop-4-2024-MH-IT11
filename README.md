@@ -718,27 +718,22 @@ Kompilasi kode menggunakan GCC dan flag yang diperlukan untuk FUSE
 ```C
 gcc archeology.c -o relics_fs `pkg-config fuse --cflags --libs`
 ```
-## 3. Buat Direktori untuk Mount Point:
-
-Buat direktori mount point untuk filesystem FUSE
-```C
-mkdir /home/kali/arsipsisop/sisopmodul4/testing
-```
-## 4. Jalankan Filesystem FUSE
+![image](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/3d4e0b6f-2d4c-4380-b2e0-246ff938d49f)
+## 3. Jalankan Filesystem FUSE
 ```C
 ./relics_fs /home/kali/arsipsisop/sisopmodul4/testing
 ```
-## 5. Verifikasi
-
+![image](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/6b1d359f-49da-4a3f-8e2c-85824d19af47)
+## 4. Verifikasi
 Verifikasi bahwa file-file di direktori testing terlihat sebagai file utuh.
-## 6.Salin File ke Direktori report:
-
+![image](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/897cf3ee-86b3-4944-8eea-e2001ed11120)
+## 5.Salin File ke Direktori report:
 Salin file dari testing ke report
 ```C
 cp -r /home/kali/arsipsisop/sisopmodul4/testing/* /home/kali/arsipsisop/sisopmodul4/report/
 ```
-## 7. Konfigurasi Samba:
-
+![image](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/95429529-24ed-4c48-84a8-880f0a3c7aaf)
+## 6. Konfigurasi Samba:
 Tambahkan konfigurasi Samba untuk direktori report di file /etc/samba/smb.conf:
 ```C
 [report]
@@ -750,17 +745,18 @@ Tambahkan konfigurasi Samba untuk direktori report di file /etc/samba/smb.conf:
    public = yes
    writable = yes
 ```
-## 8. Restart layanan Samba:
+## 7. Restart layanan Samba:
 ```C
 sudo systemctl restart smbd
 sudo systemctl restart nmbd
 ```
-## 9. Akses dari Windows:
+## 8. Akses dari Windows:
 
 Akses folder report dari Windows melalui Samba dengan alamat IP mesin Linux
 ```C
-\\192.168.168.130\report
+\\[ip address kalian]\report
 ```
+![image](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/d2903a89-ab65-4ce9-b43a-9f4d8ae124a9)
 
 
 # Kendala yang Dialami
