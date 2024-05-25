@@ -260,7 +260,10 @@ int main(int argc, char *argv[]) {
 
 # Hasil Run 
 
-
+![Screenshot_from_2024-05-25_18-44-22](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/09641de6-495c-488f-a5e4-da94a781e35a)
+![Screenshot_from_2024-05-25_18-44-55](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/8bf7483c-451c-4d8b-8dd6-504874199946)
+![Screenshot_from_2024-05-25_18-52-15](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/4d0ae136-afd1-4ae6-8222-32df1b9c751e)
+![Screenshot_from_2024-05-25_18-52-24](https://github.com/rdthrdn/Sisop-4-2024-MH-IT11/assets/137570361/cc65b2e4-74af-48d0-89f8-93f2b362850a)
 
 # Kendala yang Dialami
 
